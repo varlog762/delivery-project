@@ -11,6 +11,12 @@ a {
   text-decoration: none;
 }
 
+.page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .container {
   width: 1230px;
   height: 100%;
@@ -45,30 +51,41 @@ a {
   color: var(--gray---gray-10);
 }
 
+.header-controls {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 8px;
+}
+
 .btn {
+  border: none;
   border-radius: 2px;
   padding: 8px 16px;  
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
   text-align: center;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 
-.blue-btn {
+.primary-btn {
+  border: 1px solid var(--daybreak-blue---blue-6);
   background: var(--daybreak-blue---blue-6);
   color: var(--gray---gray-1);
 }
 
-.light-btn {
+.outline-btn {
   border: 1px solid var(--gray---gray-5);
   background: var(--gray---gray-1);
   color: var(--gray---gray-8);
 }
 
-.user-icon {
-  /* display: block; */
-  width: 16px;
-  height: 24px;
+.main {
+  flex-grow: 1;
 }
 
 .footer {
