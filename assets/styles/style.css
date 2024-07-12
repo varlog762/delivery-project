@@ -100,6 +100,44 @@ ul {
   );
 }
 
+.promo {
+  position: relative;
+  min-height: 300px;
+  width: 100%;
+  padding: 68px 0 68px 70px;
+  border-radius: 10px;
+  box-shadow: 0 7px 12px 0 rgba(158, 158, 163, 0.1);
+  background: #fbf1b9;
+}
+
+.promo-info {
+  position: relative;
+  z-index: 1;
+}
+
+.promo-title {
+  font-weight: 700;
+  font-size: 39px;
+  color: #302c34;
+  margin-bottom: 15px;
+}
+
+.promo-text {
+  font-weight: 400;
+  font-size: 24px;
+  color: #302c34;
+}
+
+.promo-img {
+  height: 100%;
+  width: 60%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  background: url('../images/promo-img.png') no-repeat center center / cover;
+}
+
 .footer {
   min-height: 156px;
   display: flex;
@@ -127,6 +165,12 @@ ul {
   align-items: center;
   justify-content: start;
   gap: 15px;
+}
+
+.footer-nav-list a {
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--gray---gray-8);
 }
 
 .footer-social {
